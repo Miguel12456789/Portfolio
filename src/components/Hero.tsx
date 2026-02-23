@@ -26,7 +26,7 @@ const FloatingShape = ({
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center overflow-x-clip px-6 pt-24">
+    <section id="home" className="relative min-h-screen flex flex-col items-center justify-center overflow-x-clip px-6 pt-24">
       {/* Marquee name */}
       <div className="absolute top-1/2 -translate-y-1/2 w-full overflow-hidden pointer-events-none select-none">
         <div className="animate-marquee flex whitespace-nowrap">

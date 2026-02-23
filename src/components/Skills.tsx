@@ -1,46 +1,93 @@
 import { motion } from "framer-motion";
-import { Code2, Server, Palette, Gauge, Smartphone } from "lucide-react";
 
 const skills = [
   {
-    icon: Code2,
-    title: "Frontend Development",
-    description: "Interfaces modernas, responsivas e com animações suaves que criam uma experiência envolvente.",
-    color: "from-vibrant-orange to-vibrant-yellow",
-    bg: "bg-vibrant-orange/10",
-    iconColor: "text-vibrant-orange",
+    name: "HTML5",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
   },
   {
-    icon: Server,
-    title: "Backend Development",
-    description: "Estruturas sólidas, seguras e escaláveis para garantir performance e estabilidade.",
-    color: "from-vibrant-purple to-vibrant-blue",
-    bg: "bg-vibrant-purple/10",
-    iconColor: "text-vibrant-purple",
+    name: "CSS3",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
   },
   {
-    icon: Palette,
-    title: "UI/UX Design",
-    description: "Design minimalista, premium e orientado à conversão.",
-    color: "from-vibrant-cyan to-vibrant-blue",
-    bg: "bg-vibrant-cyan/10",
-    iconColor: "text-vibrant-cyan",
+    name: "JavaScript",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
   },
   {
-    icon: Gauge,
-    title: "Performance & SEO",
-    description: "Websites rápidos, otimizados e preparados para competir nos motores de busca.",
-    color: "from-vibrant-lime to-vibrant-cyan",
-    bg: "bg-vibrant-lime/10",
-    iconColor: "text-vibrant-lime",
+    name: "React",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
   },
   {
-    icon: Smartphone,
-    title: "Responsive Design",
-    description: "Experiência perfeita em desktop, tablet e mobile.",
-    color: "from-vibrant-yellow to-vibrant-orange",
-    bg: "bg-vibrant-yellow/10",
-    iconColor: "text-vibrant-yellow",
+    name: "Node.js",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
+  },
+  {
+    name: "Next.js",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+  },
+  {
+    name: "Express",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
+  },
+  {
+    name: "Python",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
+  },
+  {
+    name: "PHP",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg",
+  },
+  {
+    name: "C",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg",
+  },
+  {
+    name: "C++",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg",
+  },
+  {
+    name: "C#",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg",
+  },
+  {
+    name: "Django",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg",
+  },
+  {
+    name: ".NET",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg",
+  },
+  {
+    name: "MongoDB",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
+  },
+  {
+    name: "WordPress",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/wordpress/wordpress-original.svg",
+  },
+  {
+    name: "GitHub",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg",
+  },
+  {
+    name: "Git",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
+  },
+  {
+    name: "Python",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
+  },
+  {
+    name: "MySQL",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+  },
+  {
+    name: "SQL server",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original.svg",
+  },
+  {
+    name: "Figma",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg",
   },
 ];
 
@@ -56,35 +103,34 @@ const Skills = () => {
           className="text-center mb-16"
         >
           <span className="inline-block px-4 py-1.5 rounded-full bg-vibrant-blue/10 text-vibrant-blue text-xs font-semibold mb-4 border border-vibrant-blue/20">
-            Skills & Especialidades
+            Skills
           </span>
           <h2 className="text-4xl md:text-6xl font-heading font-black mb-4">
-            Tecnologia com estratégia
+            Turning ideas into digital products
           </h2>
           <p className="text-muted-foreground text-lg max-w-lg mx-auto">
-            Tecnologia sem estratégia é apenas código. Eu uno os dois.
+            Technology focused on creating real value.
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-5">
           {skills.map((skill, index) => (
             <motion.div
-              key={skill.title}
-              initial={{ opacity: 0, y: 30 }}
+              key={skill.name}
+              initial={{ opacity: 1, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="group bg-card rounded-3xl border border-border p-8 hover:shadow-lg hover:-translate-y-1 transition-all duration-400"
+              transition={{ duration: 0.5, delay: index * 0.05 }}
+              className="group flex flex-col items-center justify-center bg-card rounded-2xl border border-border p-6 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 aspect-square"
             >
-              <div className={`w-14 h-14 rounded-2xl ${skill.bg} flex items-center justify-center mb-6`}>
-                <skill.icon className={`w-7 h-7 ${skill.iconColor}`} />
-              </div>
-              <h3 className="text-xl font-heading font-bold text-foreground mb-3">
-                {skill.title}
-              </h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">
-                {skill.description}
-              </p>
+              <img
+                src={skill.icon}
+                alt={skill.name}
+                className="w-12 h-12 md:w-14 md:h-14 object-contain mb-4"
+              />
+              <span className="text-foreground text-xs md:text-sm font-semibold text-center leading-tight">
+                {skill.name}
+              </span>
             </motion.div>
           ))}
         </div>
