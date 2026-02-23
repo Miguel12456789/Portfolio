@@ -34,8 +34,8 @@ const Contact = () => {
           {[
             { icon: Phone, label: "Phone", href: "tel:+35192254231", value: "+351 912 254 231" },
             { icon: Mail, label: "Email", href: "mailto:luizm0027@gmail.com", value: "luizm0027@gmail.com" },
-            { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/miguel-martins-4171b02b6/", value: "Perfil LinkedIn" },
-            { icon: Github, label: "GitHub", href: "https://github.com/Miguel12456789", value: "Perfil GitHub" },
+            { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/miguel-martins-4171b02b6/", value: "LinkedIn Profile" },
+            { icon: Github, label: "GitHub", href: "https://github.com/Miguel12456789", value: "GitHub Profile" },
           ].map((item) => (
             <a
               key={item.label}

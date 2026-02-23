@@ -29,14 +29,18 @@ const Hero = () => {
     <section id="home" className="relative min-h-screen flex flex-col items-center justify-center overflow-x-clip px-6 pt-24">
       {/* Marquee name */}
       <div className="absolute top-1/2 -translate-y-1/2 w-full overflow-hidden pointer-events-none select-none">
-        <div className="animate-marquee flex whitespace-nowrap">
-          {[...Array(8)].map((_, i) => (
-            <span
-              key={i}
-              className="text-[12vw] font-heading font-black tracking-tight text-foreground/[0.04] mx-4"
-            >
-              FULLSTACK DEVELOPER
-            </span>
+        <div className="animate-marquee flex whitespace-nowrap will-change-transform">
+          {[...Array(2)].map((_, groupIndex) => (
+            <div key={groupIndex} className="flex shrink-0 whitespace-nowrap">
+              {[...Array(6)].map((_, i) => (
+                <span
+                  key={i}
+                  className="text-[12vw] font-heading font-black tracking-tight text-foreground/[0.04] mx-4"
+                >
+                  FULLSTACK DEVELOPER
+                </span>
+              ))}
+            </div>
           ))}
         </div>
       </div>
@@ -87,16 +91,6 @@ const Hero = () => {
           Hello, I’m{" "}
           <span className="text-gradient-vibrant italic pr-4">Miguel!</span>
         </motion.h1>
-
-        {/* Profile avatar */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.6, delay: 0.4, type: "spring" }}
-          className="w-40 h-40 md:w-52 md:h-52 rounded-3xl bg-gradient-to-br from-vibrant-purple to-vibrant-blue flex items-center justify-center mb-8 shadow-2xl overflow-hidden"
-        >
-          <span className="text-6xl md:text-7xl">👨‍💻</span>
-        </motion.div>
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}
