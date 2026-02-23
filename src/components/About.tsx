@@ -12,7 +12,7 @@ const About = () => {
           className="text-center mb-16"
         >
           <span className="inline-block px-4 py-1.5 rounded-full bg-vibrant-purple/10 text-vibrant-purple text-xs font-semibold mb-4 border border-vibrant-purple/20">
-            About me
+            About Me
           </span>
           <h2 className="text-4xl md:text-6xl font-heading font-black">
             Who’s Behind the Code
