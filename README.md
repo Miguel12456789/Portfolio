@@ -1,8 +1,8 @@
-# Digital Craftsmanship
+# Portifolio
 
 ## About
 
-A personal portfolio website showcasing digital craftsmanship, skills, and projects.
+A personal portfolio website skills, and projects.
 
 ## Technologies
 
@@ -12,23 +12,3 @@ A personal portfolio website showcasing digital craftsmanship, skills, and proje
 - shadcn/ui
 - Tailwind CSS
 - Framer Motion
-
-## Getting Started
-
-```sh
-# Clone the repository
-git clone <YOUR_GIT_URL>
-
-# Navigate to the project directory
-cd digital-craftsmanship
-
-# Install dependencies
-npm i
-
-# Start the development server
-npm run dev
-```
-
-## Deployment
-
-This project can be deployed to Vercel or any static hosting platform that supports Vite-based projects.
